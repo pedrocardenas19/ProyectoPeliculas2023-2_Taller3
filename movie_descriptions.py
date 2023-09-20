@@ -36,7 +36,8 @@ cualquier película en menos de 200 palabras. La descripción debe incluir el g�
 información adicional que sirva para crear un sistema de recomendación."
 
 #Definimos el prompt
-movie = movies[0]['title']
+#movie = movies[0]['title']
+movie = "La cenicienta"
 prompt = f"{instruction} Has una descripción de la película {movie}"
 
 print(prompt)

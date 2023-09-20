@@ -30,4 +30,5 @@ class Command(BaseCommand):
         sim = np.array(sim)
         idx = np.argmax(sim)
         idx = int(idx)
+        print(sim)
         print(items[idx].title)

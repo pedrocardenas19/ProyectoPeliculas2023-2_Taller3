@@ -19,9 +19,9 @@ print(emb)
 
 #Vamos a crear una nueva llave con el embedding de la descripción de cada película en el archivo .json
 
-for i in range(len(movies)):
-  emb = get_embedding(movies[i]['description'],engine='text-embedding-ada-002')
-  movies[i]['embedding'] = emb
+# for i in range(len(movies)):
+#   emb = get_embedding(movies[i]['description'],engine='text-embedding-ada-002')
+#   movies[i]['embedding'] = emb
 
 
 #Vamos a almacenar esta información en un nuevo archivo .json

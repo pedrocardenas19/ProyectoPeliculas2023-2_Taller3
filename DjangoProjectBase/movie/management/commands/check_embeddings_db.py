@@ -10,7 +10,5 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
   
         items = Movie.objects.all()
-        item = items[10]
+        item = items[0]
         print(item.emb)
-        
-        
