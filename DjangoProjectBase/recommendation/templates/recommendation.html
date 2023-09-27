@@ -66,7 +66,22 @@
     </header>
     <div class="container">
         <h2>Get a Movie Recommendation:</h2>
-        <p>{{ recommended_movie }}</p>
+        <!-- <p>{{ recommended_movie }}</p>
+        <img src="{{recommended_movie.image.url}}" alt="">
+        <p>{{ recommended_movie.description }}</p> -->
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6" style="margin: 0 auto;">
+                <div class="card" style="width: auto;">
+                    <img src="{{recommended_movie.image.url}}" class="card-img-top" alt="..." width="100px" style="width: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recommended_movie }}</h5>
+                        <p class="card-text">{{ recommended_movie.description }}</p>
+                        <!-- <a href="{{recommended_movie.url}}" class="btn btn-dark">Ir a la pelicula</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <form method="post">
             {% csrf_token %}

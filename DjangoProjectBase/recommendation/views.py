@@ -28,7 +28,7 @@ def recommend_movie(request):
             sim.append(cosine_similarity(emb, emb_req))
         sim = np.array(sim)
         idx = np.argmax(sim)
-        recommended_movie = items[int(idx)].title
+        recommended_movie = items[int(idx)]
 
         # Render a template with the recommended movie
         return render(request, 'recommendation.html', {'recommended_movie': recommended_movie})
